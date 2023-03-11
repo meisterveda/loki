@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "loki-1dc1c": {
+      "hosting": {
+        "loki": [
+          "loki-1dc1c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "loki-1dc1c"
+  }
+}
