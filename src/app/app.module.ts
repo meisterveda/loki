@@ -21,6 +21,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { HeaderComponent } from './ui/header/header.component';
 import { SidenavComponent } from './ui/sidenav/sidenav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { SidenavComponent } from './ui/sidenav/sidenav.component';
     provideFunctions(() => getFunctions()),
     provideMessaging(() => getMessaging()),
     providePerformance(() => getPerformance()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    BrowserAnimationsModule
   ],
   providers: [
     ScreenTrackingService,UserTrackingService
