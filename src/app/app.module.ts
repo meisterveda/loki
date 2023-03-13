@@ -18,6 +18,9 @@ import { CreateComponent } from './pages/create/create.component';
 import { ListingsComponent } from './pages/listings/listings.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { FooterComponent } from './ui/footer/footer.component';
+import { HeaderComponent } from './ui/header/header.component';
+import { SidenavComponent } from './ui/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { SignupComponent } from './pages/signup/signup.component';
     CreateComponent,
     ListingsComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    FooterComponent,
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
