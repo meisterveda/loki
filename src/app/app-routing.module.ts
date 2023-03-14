@@ -6,14 +6,16 @@ import { CreateComponent } from './pages/create/create.component';
 import { ListingsComponent } from './pages/listings/listings.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { CreationsComponent } from './pages/dashboard/creations/creations.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
   { path: 'create', component: CreateComponent },
   { path: 'listing', component: ListingsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'dashboard/creation', component: CreationsComponent },
 ];
 
 @NgModule({

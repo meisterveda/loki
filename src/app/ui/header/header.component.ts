@@ -6,14 +6,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {
-  navbarOpen = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  setNavbarOpen() {
-    this.navbarOpen = !this.navbarOpen;
-  }
-}
+export class HeaderComponent {}
