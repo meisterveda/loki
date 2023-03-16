@@ -7,6 +7,8 @@ import { ListingsComponent } from './pages/listings/listings.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { CreationsComponent } from './pages/dashboard/creations/creations.component';
+import { UserComponent } from './pages/user/user.component';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'listing', component: ListingsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'user/:id', component: UserComponent, canActivate: [AuthGuard] },
   { path: 'dashboard/creation', component: CreationsComponent },
 ];
 

@@ -34,6 +34,7 @@ import { HeroComponent } from './ui/hero/hero.component';
 import { FeatureComponent } from './ui/feature/feature.component';
 import { FaqComponent } from './ui/faq/faq.component';
 import { CreationsComponent } from './pages/dashboard/creations/creations.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CreationsComponent } from './pages/dashboard/creations/creations.compon
     FeatureComponent,
     FaqComponent,
     CreationsComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

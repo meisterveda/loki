@@ -52,12 +52,19 @@ export class AuthService {
   async googleSignIn() {
     const provider = new GoogleAuthProvider();
     await signInWithPopup(this.auth, provider)
-      .then((user) => {
+      .then((result) => {
+        const user = result.user;
         this.updateUserData(user);
+        this.router.navigate(['/']);
       })
       .catch((error) => {
         console.log(error);
       });
+  }
+
+  async SignOut() {
+    await this.auth.signOut();
+    this.router.navigate(['/']);
   }
 
   private updateUserData(user: any) {
