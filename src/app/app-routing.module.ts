@@ -8,7 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { CreationsComponent } from './pages/dashboard/creations/creations.component';
 import { UserComponent } from './pages/user/user.component';
-import { AuthGuard } from './guard/auth.guard';
+import { AuthGuard } from './guard/auth/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
