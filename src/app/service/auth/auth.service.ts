@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { User } from '../model/user.model';
+import { User } from '../../model/user.model';
 
 import {
   Auth,
