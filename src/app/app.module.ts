@@ -37,6 +37,7 @@ import { CreationsComponent } from './pages/dashboard/creations/creations.compon
 import { UserComponent } from './pages/user/user.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CardComponent } from './ui/card/card.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     UserComponent,
     AboutComponent,
     ContactComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
